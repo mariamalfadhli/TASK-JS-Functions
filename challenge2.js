@@ -6,10 +6,10 @@
  * e.g.
  * greet("Hamza") logs "Hello Hamza"
  */
-function greet(name) {
-  // Your code here
+function greet(myName) {
+  console.log(`Hello ${myName}`)
 }
-
+greet("Maryam"); 
 /**
  * isOdd(n):
  * - receives a number n
@@ -20,9 +20,12 @@ function greet(name) {
  * isOdd(10) -> false
  */
 function isOdd(n) {
-  // Your code here
+ if (n % 2 == 1)
+ console.log("True")
+ else 
+ console.log("False");
 }
-
+isOdd(4);
 /**
  * oddsSmallerThan(n):
  * - receives a number n
@@ -33,9 +36,16 @@ function isOdd(n) {
  * oddsSmallerThan(15) -> 7
  */
 function oddsSmallerThan(n) {
-  // Your code here
+  let sum =0;
+  for (let i = 1; i < n; i++) {
+    if (i % 2 == 1) 
+    sum = sum +1;
+    
 }
+console.log(sum);
+  }
 
+  oddsSmallerThan(15);
 /**
  * squareOrDouble(n):
  * - receives a number n
@@ -46,6 +56,10 @@ function oddsSmallerThan(n) {
  * squareOrDouble(16) -> 32
  * squareOrDouble(9) -> 81
  */
+
+
 function squareOrDouble(n) {
-  // Your code here
+  
 }
+
+squareOrDouble(5);
