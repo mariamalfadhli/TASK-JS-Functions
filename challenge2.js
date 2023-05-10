@@ -6,6 +6,8 @@
  * e.g.
  * greet("Hamza") logs "Hello Hamza"
  */
+
+
 function greet(myName) {
   console.log(`Hello ${myName}`)
 }
@@ -57,9 +59,8 @@ console.log(sum);
  * squareOrDouble(9) -> 81
  */
 
-
 function squareOrDouble(n) {
-  
+  if (n%2==1){console.log(`squareOrDouble (${n}) -> ${n*n}`)}
+  else if (n%2==0){console.log(`squareOrDouble(${n}) -> ${n*2}`)}
 }
-
 squareOrDouble(5);
